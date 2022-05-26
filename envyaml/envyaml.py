@@ -122,6 +122,8 @@ class EnvYAML:
             self.__strict,
         )
 
+        self.yaml_config = yaml_config
+
         # update config
         if isinstance(yaml_config, list):
             self.__cfg.update({k: v for k, v in enumerate(yaml_config)})
